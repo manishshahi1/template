@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>Log in | Introbot</title>
+    <!-- bootstap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- ./bootstrap -->
+    <style>
+      .form-control:focus {
+        outline: none !important;
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card shadow-sm border-0 w-50 mx-auto mt-3 loginCard">
+            <div class="card-body">
+              <div
+                class="bg-primary rounded border-0 bg-gradient p-4 text-white"
+              >
+                <!-- information holder -->
+                <h4 class="card-title"><b>Welcome back!</b></h4>
+                <p class="card-text h6 fw-bold">Log in to your account</p>
+                <p class="text-end card-text">
+                  <img
+                    src="/assets/images/login.png"
+                    alt="log in"
+                    width="65px"
+                  />
+                </p>
+              </div>
+              <!-- ./information holder -->
+              <!-- login form -->
+              <form
+                autocomplete="off"
+                action="/login"
+                method="POST"
+                class="mt-4"
+              >
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control shadow-none form-control-lg border-0 border border-bottom border-3 rounded-0"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating mb-4">
+                  <input
+                    type="password"
+                    class="form-control shadow-none form-control-lg border-0 border border-bottom border-3 rounded-0"
+                    id="floatingInputPassword"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInputPassword">Password</label>
+                </div>
+                <div class="d-grid gap-2">
+                  <button
+                    class="btn btn-primary bg-gradient p-3 fs-4 btn-lg"
+                    type="button"
+                  >
+                    Log in
+                  </button>
+                </div>
+              </form>
+              <!-- login form -->
+            </div>
+            <!-- ./card body -->
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <!-- ./col -->
+
+          <p class="text-center mt-3">
+            <img
+              src="/assets/images/introbot_logo_black.png"
+              alt="Introbot logo"
+              class="img-fluid my-3"
+              width="250px"
+            />
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ./bootstrap js -->
+
+    <script>
+      //get classname from the card
+      let screenWidth = screen.width;
+      if (screenWidth < 700) {
+        let loginCard = document.querySelector(".loginCard");
+        loginCard.classList.remove("w-50");
+      }
+    </script>
+  </body>
+</html>
