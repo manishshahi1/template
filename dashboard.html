@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=no"
+    />
+    <!-- bootstrap -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <!-- end -->
+    <title>Dashboard | Introbot</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar bg-light">
+      <div class="container">
+        <span class="navbar-brand mb-0 h1">Navbar</span>
+
+        <form action="/search/" class="d-flex me-end" role="search">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search User"
+              aria-label="Search User"
+              aria-describedby="button-addon2"
+            />
+            <button
+              class="btn btn-outline-primary"
+              type="button"
+              id="button-addon2"
+            >
+              🔍
+            </button>
+          </div>
+        </form>
+        <a href="/logout" class="btn btn-primary fw-bold">Log out</a>
+      </div>
+    </nav>
+    <!-- end -->
+  </body>
+</html>
