@@ -22,11 +22,17 @@
   <body>
     <!-- navbar -->
     <div class="collapse" id="navbarToggleExternalContent">
-      <div class="bg-dark p-3">
-        <h5 class="text-white h5 container">
-          Welcome, {{email}}
-          <a href="/logout" class="btn btn-primary mt-0 float-end">Logout</a>
-        </h5>
+      <div class="container p-2">
+        <div class="row">
+          <div class="col-8">
+            <h4><b>Welcome, {{email}}!</b></h4>
+          </div>
+          <div class="col-4">
+            <a href="" class="float-end btn btn-dark fw-bold bg-gradient"
+              >Log out</a
+            >
+          </div>
+        </div>
       </div>
     </div>
     <nav class="navbar bg-light">
@@ -50,18 +56,18 @@
               🔍
             </button>
           </div>
+          <button
+            class="navbar-toggler border-0 shadow-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </form>
-        <button
-          class="navbar-toggler border-0 shadow-none"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarToggleExternalContent"
-          aria-controls="navbarToggleExternalContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
       </div>
     </nav>
     <!-- end -->
