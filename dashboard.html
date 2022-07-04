@@ -21,54 +21,38 @@
   </head>
   <body>
     <!-- navbar -->
-    <div class="collapse" id="navbarToggleExternalContent">
-      <div class="container p-2">
+    <div class="container-fluid bg-light p-2">
+      <div class="container">
         <div class="row">
-          <div class="col-8">
-            <h4><b>Welcome, {{email}}!</b></h4>
+          <div class="col-3">
+            <h4 class="mt-1"><b>Introbot</b></h4>
           </div>
-          <div class="col-4">
-            <a href="" class="float-end btn btn-dark fw-bold bg-gradient"
-              >Log out</a
-            >
+          <div class="col-6">
+            <form action="/search/" role="search">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control border border-end-0 border-primary border-2"
+                  placeholder="Search User"
+                  aria-label="Search User"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn border border-primary border-start-0 border-2 btn-outline-primary"
+                  type="button"
+                  id="button-addon2"
+                >
+                  🔍
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-3">
+            <a class="btn btn-primary bg-gradient float-end">Log out</a>
           </div>
         </div>
       </div>
     </div>
-    <nav class="navbar bg-light">
-      <div class="container">
-        <form action="/search/" class="d-flex float-end" role="search">
-          <div class="input-group">
-            <input
-              type="text"
-              class="form-control border border-end-0 border-primary border-2"
-              placeholder="Search User"
-              aria-label="Search User"
-              aria-describedby="button-addon2"
-            />
-            <button
-              class="btn border border-primary border-start-0 border-2 btn-outline-primary"
-              type="button"
-              id="button-addon2"
-            >
-              🔍
-            </button>
-          </div>
-        </form>
-        <span class="navbar-brand mb-0 text-center h5 fw-bold">Introbot </span>
-        <button
-          class="navbar-toggler fs-start border-0 shadow-none"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarToggleExternalContent"
-          aria-controls="navbarToggleExternalContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-    </nav>
     <!-- end -->
     <!-- bootstrap js -->
     <script
